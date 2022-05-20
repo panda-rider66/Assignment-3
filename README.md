@@ -32,21 +32,21 @@ def data(name, age):
     print(name, age)
 
 # call function
-demo("Jamie", 21)
+data("Jamie", 21)
 ```
 
 ### Problem 2: Create a function with variable length of arguments
-Write a program to create function **set()** to accept a variable length of arguments and print their value.
+Write a program to create function ```set()``` to accept a variable length of arguments and print their value.
 
 **Note:** Create a function in such a way that we can pass any number of arguments to this function and the function should process them and display each argument’s value
 
 **Given:**
 ```
 # call function with 3 arguments
-func1(20, 40, 60)
+set(20, 40, 60)
 
 # call function with 2 arguments
-func1(80, 100)
+set(80, 100)
 ```
 
 **Expected Output:**
@@ -70,7 +70,7 @@ set(20, 40, 60)
 set(80, 100)
 ```
 ### Problem 3: Return multiple values from a function
-Write a program to create function **calc()** such that it can accept two variables and calculate **addition** and **subtraction**. Also, it must return both addition and subtraction in a single return call.
+Write a program to create function ```calc()``` such that it can accept two variables and calculate **addition** and **subtraction**. Also, it must return both addition and subtraction in a single return call.
 
 **Given:**
 ```python
@@ -100,7 +100,7 @@ print(ans)
 ```
 
 ### Problem 4: Create a function with default argument
-Write a program to create a function **show_employee()** using the following conditions.
+Write a program to create a function ```show_employee()``` using the following conditions.
 
 * It should accept the employee’s name and salary and display both. 
 * If the salary is missing in the function call then assign default value **24000** to salary
@@ -140,13 +140,36 @@ A recursive function is a function that calls itself, again and again.
 ```
 125250
 ```
+### Practice Question 2: Assigning new names to functions
+Write a function called ```display_name(name, age)```. 
+Rename it ```new_name(name, age)``` and call the new assigned name
 
-### Practice Question 2
+You should be able to call the previous function using ```new_name(name, age)```
 
-### Practice Question 3
 
+
+### Practice Question 3: Creating function with simple arguments
+Write a function that takes a person's name and year of birth and displays in ```candidate(name, yyyy)``` 
+
+
+**Expected Output**
+```
+Name: Nafis YOB: 2005
+```
 ### Practice Question 4
+Given a list of integers, return ```True``` if the array contains a 7 next to a 7 somewhere.
+
+```python
+num([1, 7, 7]) → True
+num([1, 7, 1, 7]) → False
+num([7, 1, 7]) → False
+```
 
 ## Challenge Question
+Write a function that uses a list of integers and returns ```True``` if it contains ```9, 8, 1``` in order.
 
-n
+```python
+set([5,2,4,9,8,1,5]) --> True
+set([9,8,1,4,0,5,7]) --> True
+set([9,7,2,4,4,5,2]) --> False
+```
